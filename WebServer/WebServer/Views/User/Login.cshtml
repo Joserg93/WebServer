@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Iniciar Sesión";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>
+    @ViewBag.Title
+    <link href="~/Content/Login.css" rel="stylesheet" />
+</h2>
+<div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+            @Html.ValidationSummary(true)
+            <form class="form-signin" action="Auth" method="post">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" name="email" maxlength="120" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" name="password" minlength="6" maxlength="30" class="form-control" placeholder="Contraseña" required>
+                <div >
+                </div>
+                <button class="btn btn-lg btn-success btn-block btn-signin" type="submit" >Iniciar Sesión</button>
+            </form>     
+    </div>
+</div>
+
