@@ -9,7 +9,7 @@
     @ViewBag.Title
     <link href="~/Content/Register.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-</h2> 
+</h2>
 <div class="container">
     <div class="row main">
         <div class="main-login main-center">
@@ -17,20 +17,20 @@
             {
                 @Html.ValidationSummary(true)
                 <div class="form-group">
-                <label for="email" class="cols-sm-2 control-label">Email</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                        <input type="email" class="form-control" name="email" id="email" maxlength="120" placeholder="Email" required autofocus />
+                    <label for="email" class="cols-sm-2 control-label">Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="email" class="form-control" name="email" id="email" maxlength="120" placeholder="Email" required autofocus />
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="form-group">
                     <label for="username" class="cols-sm-2 control-label">Nombre de Usuario</label>
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" maxlength="20" name="name" id="username" placeholder="Nombre de Usuario" required/>
+                            <input type="text" class="form-control" maxlength="20" name="name" id="username" placeholder="Nombre de Usuario" required />
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                            <input type="password" class="form-control" name="password" minlength="6" maxlength="30" id="password" placeholder="Contraseña" required/>
+                            <input type="password" class="form-control" name="password" minlength="6" maxlength="30" id="password" placeholder="Contraseña" required />
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                            <input type="password" class="form-control" name="confirmPassword" minlength="6" maxlength="30" id="confirm" placeholder="Confirmar Contraseña" required/>
+                            <input type="password" class="form-control" name="confirmPassword" minlength="6" maxlength="30" id="confirm" placeholder="Confirmar Contraseña" required />
                         </div>
                     </div>
                 </div>
